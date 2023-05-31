@@ -1,0 +1,44 @@
+/* CONNECTIONS */
+$colours: (
+  'Reddit': #ff4500,
+  'Steam': #000000,
+  'Twitter': #009ef7,
+  'Spotify': #1db954,
+  'Xbox Live': #107c10,
+  'Battle.net': #0566b0,
+  'Facebook': #1877f2,
+  'GitHub': #222222,
+  'Twitch': #9146ff,
+  'YouTube': #ff0000,
+);
+
+.connection-YOVI9j {
+  @each $i,
+  $u in $colours {
+    &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
+      background-color: rgba($u, 0.6);
+    }
+  }
+}
+.connectionHeader-Ixbb1s {
+  @each $i,
+  $u in $colours {
+    &:has(.connectionIcon-1iZ6F_[alt*='#{$i}']) {
+      background-color: rgba($u, 0.2);
+    }
+  }
+}
+.connectionAccountLabel-28GEPk {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.connectionDelete-3YgMVq {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.integrationsWrapper-1V-5L9 {
+  background-color: cv('const:colors.twitch-purple');
+  border-radius: 0 0 8px 8px;
+}
+.integration-1qC-fv {
+  background-color: cv('const:colors.twitch-purple');
+}
